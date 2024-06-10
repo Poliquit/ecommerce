@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'Assets')));
+app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
 // For Bootstrap
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
@@ -26,6 +26,9 @@ app.get('/register', (req, res) => {
 });
 app.get('/about', (req,res) => {
     res.render('about')
+})
+app.get('/shop', (req,res) => {
+    res.render('shop')
 })
 
 // Connect to MongoDB database

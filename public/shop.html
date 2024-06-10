@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js" defer> </script>
+    <title>HIYAS</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR WITH HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navs fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <h3>HIYAS</h3>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown nav-list">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Art Works</a></li>
+                  <li><a class="dropdown-item" href="#">Furnitures</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion Styles</a></li>
+                  <li><a class="dropdown-item" href="#">Home Decorations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="/about.html">About</a>
+              </li>
+            </ul>
+            <!-- Hidden content when navbar is collapsed -->
+            <form class="d-flex ms-auto d-lg-flex">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="btn-group ms-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bx bxs-cog"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <img
+                        src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png"
+                        alt="Profile Picture"
+                        class="profile-pic"
+                      />
+                      user
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Order <i class="bx bxs-package"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Creator <i class="bx bxs-star"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Contact <i class="bx bxs-envelope"></i
+                    ></a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item logout text-success" href="register"
+                      >Sign in</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>

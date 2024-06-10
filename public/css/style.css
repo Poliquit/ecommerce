@@ -1,3 +1,4 @@
+/* index.html */
 .profile-pic {
     width: 30px;
     height: 30px;
@@ -5,20 +6,23 @@
     object-fit: cover;
     margin-right: 10px;
   }
+
   .dropdown-item .icon {
     margin-left: 5px;
   }
 
-  nav .navbar-brand,
-  nav h3 {
+  nav .navbar-brand{
     letter-spacing: 0.5rem;
     font-family: "MuseoModerno", sans-serif;
     font-weight: 600;
     margin-left: 10px;
-    margin-top: 5px
+    margin-top: 5px;
   }
 
-  /* Circular pagination indicators */
+  header {
+    margin-top: 4rem;
+  }
+  
   .carousel-indicators [data-bs-target] {
     background-color: #000;
     border-radius: 50%;
@@ -26,7 +30,6 @@
     height: 12px;
   }
   
-  /* Center the content of the carousel */
   .carousel-caption {
     position: absolute;
     bottom: 20px;
@@ -39,25 +42,67 @@
     padding: 60px 0;
   }
 
-  .card {
-    border: none;
+  section .card {
+    border: none; 
     background-color: transparent;
+    box-shadow: none; 
   }
-
+  
   .card-img-top {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
-
+  
   .card-body {
     margin-top: 5px;
-    margin-right: 20px;
+    padding: 0; 
   }
-
+  
   .explore-section a {
     margin-top: -5px;
     color: #6c757d;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* About.html */
+
+  .support-section {
+    margin-top: 5rem;
+  }
+
+  .horizontal-card {
+    margin: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .horizontal-card .card-img {
+    width: 100%;
+    height: auto;
+  }
+
+   /*  */
+  .mission-vision-section .container {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .mission-vision-section .img-fluid {
+    border-radius: 10px;
+  }
+  
+  .mission-vision-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-vision-section p.lead {
+    font-size: 1.25rem;
   }
 
   @media (max-width: 768px) {
