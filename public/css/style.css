@@ -1,0 +1,67 @@
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .dropdown-item .icon {
+    margin-left: 5px;
+  }
+
+  nav .navbar-brand,
+  nav h3 {
+    letter-spacing: 0.5rem;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px
+  }
+
+  /* Circular pagination indicators */
+  .carousel-indicators [data-bs-target] {
+    background-color: #000;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Center the content of the carousel */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .card-section {
+    padding: 60px 0;
+  }
+
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+
+  .explore-section a {
+    margin-top: -5px;
+    color: #6c757d;
+  }
+
+  @media (max-width: 768px) {
+    .card-img-top {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js" defer> </script>
+    <title>HIYAS</title>
+  </head>
+  
+  <body>
+    <!-- NAVIGATION BAR WITH HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h3>HIYAS</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown nav-list">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Art Works</a></li>
+                <li><a class="dropdown-item" href="#">Furnitures</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Styles</a></li>
+                <li><a class="dropdown-item" href="#">Home Decorations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+          </ul>
+          <!-- Hidden content when navbar is collapsed -->
+          <form class="d-flex ms-auto d-lg-flex">
+            <input
+              class="form-control me-2 search-bar"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="btn-group ms-2">
+              <button
+                type="button"
+                class="btn btn-outline-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bx bxs-cog"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png"
+                      alt="Profile Picture"
+                      class="profile-pic"
+                    />
+                    user
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Order <i class="bx bxs-package"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Creator <i class="bx bxs-star"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Contact <i class="bx bxs-envelope"></i
+                  ></a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item logout text-success" href="register"
+                    >Sign in</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/1200x600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First Slide</h5>
+            <p>First slide description.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second Slide</h5>
+            <p>Second slide description.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/1200x600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third Slide</h5>
+            <p>Third slide description.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- SECTION PRODUCT  -->
+
+    <!-- Best Sellers Section -->
+    <section class="card-section">
+      <h3 class="text-center mb-5">Categories</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Art Works"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Art Works</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Decorations"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Decorations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Furnitures"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Furnitures</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Fashion + Styles"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Fashion + Styles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="card-section explore-section">
+      <h3 class="text-center mb-5">Explore Best Sellers</h3>
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center"
+        >
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Art Works"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Art Works</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Decorations"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Decorations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Furnitures"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Furnitures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mb-5"><a href="about.html">View all</a></p>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid mt-5">
+      <div class="row">
+        <div class="col text-center">
+          <p class="mt-2">&copy; All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
