@@ -7,37 +7,44 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-// shop checkout
-document.addEventListener('DOMContentLoaded', function() {
-  const items = document.querySelectorAll('.item');
-  const previewImg = document.getElementById('preview-img');
-  const previewName = document.getElementById('preview-name');
-  const previewPrice = document.getElementById('preview-price');
-  const previewQuantity = document.getElementById('preview-quantity');
-  const previewDescription = document.getElementById('preview-description');
-
-  items.forEach(item => {
-    item.addEventListener('click', function() {
-      const itemName = this.getAttribute('data-name');
-      const itemPrice = this.getAttribute('data-price');
-      const itemDescription = this.getAttribute('data-description');
-      const itemImgSrc = this.getAttribute('src');
-
-      // Update preview section
-      previewImg.src = itemImgSrc;
-      previewName.textContent = itemName;
-      previewPrice.textContent = `Price: $${itemPrice}`;
-      previewDescription.textContent = itemDescription;
+  document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.item');
+  
+    items.forEach(item => {
+      item.addEventListener('click', function() {
+        const itemName = item.dataset.name;
+        const itemPrice = item.dataset.price;
+        const itemDescription = item.dataset.description;
+        const itemImgSrc = item.src;
+  
+        const previewImg = document.querySelector('.preview-img');
+        const previewName = document.querySelector('.preview-name');
+        const previewDescription = document.querySelector('.preview-description');
+        const previewPrice = document.querySelector('.preview-price');
+  
+        previewImg.src = itemImgSrc;
+        previewName.textContent = itemName;
+        previewDescription.textContent = itemDescription;
+        previewPrice.textContent = `Price: $${itemPrice}`;
+  
+        // Show the preview section
+        const previewSection = document.querySelector('.preview-section');
+        previewSection.style.display = 'block';
+      });
+    });
+  
+    // Optional: Implement 'Add to Cart' and 'Buy Now' functionality
+    const addToCartButton = document.getElementById('add-to-cart');
+    const buyNowButton = document.getElementById('buy-now');
+  
+    addToCartButton.addEventListener('click', function() {
+      alert('Added to cart!');
+      // Implement add to cart functionality
+    });
+  
+    buyNowButton.addEventListener('click', function() {
+      alert('Proceeding to checkout!');
+      // Implement buy now functionality
     });
   });
-
-  document.getElementById('add-to-cart').addEventListener('click', function() {
-    alert('Added to cart!');
-    // Implement add to cart functionality
-  });
-
-  document.getElementById('buy-now').addEventListener('click', function() {
-    alert('Proceeding to checkout!');
-    // Implement buy now functionality
-  });
-});
+  

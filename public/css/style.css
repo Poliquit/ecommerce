@@ -113,8 +113,35 @@
   /* Shop page */
 
   .shop-section {
-    padding-top: 80px; /* Adjust based on the height of your navbar */
-  }
+  padding-top: 80px; /* Adjust based on the height of your navbar */
+}
+
+.preview-section {
+  display: none; /* Hide the preview section initially */
+}
+
+.preview-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.preview-section h3,
+.preview-section p {
+  text-align: left; /* Adjust as per your design */
+}
+
+.preview-section .price-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-section .price-quantity .quantity {
+  max-width: 70px;
+}
+
 
   @media (max-width: 768px) {
     .card-img-top {
