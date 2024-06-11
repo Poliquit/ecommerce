@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
@@ -25,113 +25,380 @@
     ></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js" defer> </script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <title>HIYAS</title>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- NAVIGATION BAR WITH HEADER -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navs fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <h3>HIYAS</h3>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown nav-list">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Art Works</a></li>
-                  <li><a class="dropdown-item" href="#">Furnitures</a></li>
-                  <li><a class="dropdown-item" href="#">Fashion Styles</a></li>
-                  <li><a class="dropdown-item" href="#">Home Decorations</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-success" href="/about.html">About</a>
-              </li>
-            </ul>
-            <!-- Hidden content when navbar is collapsed -->
-            <form class="d-flex ms-auto d-lg-flex">
-              <input
-                class="form-control me-2 search-bar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <div class="btn-group ms-2">
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="bx bxs-cog"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center" href="#">
-                      <img
-                        src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png"
-                        alt="Profile Picture"
-                        class="profile-pic"
-                      />
-                      user
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Order <i class="bx bxs-package"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Creator <i class="bx bxs-star"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Contact <i class="bx bxs-envelope"></i
-                    ></a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item logout text-success" href="register"
-                      >Sign in</a
-                    >
-                  </li>
-                </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h3>HIYAS</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown nav-list">
+              <a
+                class="nav-link dropdown-toggle text-success"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Art Works</a></li>
+                <li><a class="dropdown-item" href="#">Furnitures</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Styles</a></li>
+                <li><a class="dropdown-item" href="#">Home Decorations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+          </ul>
+          <!-- Hidden content when navbar is collapsed -->
+          <form class="d-flex ms-auto d-lg-flex">
+            <input
+              class="form-control me-2 search-bar"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="btn-group ms-2">
+              <button
+                type="button"
+                class="btn btn-outline-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bx bxs-cog"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png"
+                      alt="Profile Picture"
+                      class="profile-pic"
+                    />
+                    user
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Order <i class="bx bxs-package"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Creator <i class="bx bxs-star"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Contact <i class="bx bxs-envelope"></i>
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item logout text-success" href="register">
+                    Sign in
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Categories -->
+    <section class="shop-section">
+      <div class="container mb-5">
+        <div class="row">
+          <!-- Categories Section -->
+          <div class="col-lg-8">
+            <!-- Main Heading -->
+            <h1 class="text-center">Shop</h1>
+
+            <!-- Art Works -->
+            <h3 class="mt-4">Art Works</h3>
+            <div class="row mt-3">
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Art Work 1"
+                  data-name="Art Work 1"
+                  data-price="100"
+                  data-description="Description for Art Work 1"
+                />
               </div>
-            </form>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Art Work 2"
+                  data-name="Art Work 2"
+                  data-price="200"
+                  data-description="Description for Art Work 2"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Art Work 3"
+                  data-name="Art Work 3"
+                  data-price="300"
+                  data-description="Description for Art Work 3"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Art Work 4"
+                  data-name="Art Work 4"
+                  data-price="400"
+                  data-description="Description for Art Work 4"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Art Work 5"
+                  data-name="Art Work 5"
+                  data-price="500"
+                  data-description="Description for Art Work 5"
+                />
+              </div>
+            </div>
+
+            <!-- Furnitures -->
+            <h3 class="mt-4">Furnitures</h3>
+            <div class="row mt-3">
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Furniture 1"
+                  data-name="Furniture 1"
+                  data-price="600"
+                  data-description="Description for Furniture 1"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Furniture 2"
+                  data-name="Furniture 2"
+                  data-price="700"
+                  data-description="Description for Furniture 2"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Furniture 3"
+                  data-name="Furniture 3"
+                  data-price="800"
+                  data-description="Description for Furniture 3"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Furniture 4"
+                  data-name="Furniture 4"
+                  data-price="900"
+                  data-description="Description for Furniture 4"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Furniture 5"
+                  data-name="Furniture 5"
+                  data-price="1000"
+                  data-description="Description for Furniture 5"
+                />
+              </div>
+            </div>
+
+            <!-- Home Decoration -->
+            <h3 class="mt-4">Home Decoration</h3>
+            <div class="row mt-3">
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Home Decoration 1"
+                  data-name="Home Decoration 1"
+                  data-price="1100"
+                  data-description="Description for Home Decoration 1"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Home Decoration 2"
+                  data-name="Home Decoration 2"
+                  data-price="1200"
+                  data-description="Description for Home Decoration 2"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Home Decoration 3"
+                  data-name="Home Decoration 3"
+                  data-price="1300"
+                  data-description="Description for Home Decoration 3"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Home Decoration 4"
+                  data-name="Home Decoration 4"
+                  data-price="1400"
+                  data-description="Description for Home Decoration 4"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Home Decoration 5"
+                  data-name="Home Decoration 5"
+                  data-price="1500"
+                  data-description="Description for Home Decoration 5"
+                />
+              </div>
+            </div>
+
+            <!-- Fashion + Styles -->
+            <h3 class="mt-4">Fashion + Styles</h3>
+            <div class="row mt-3">
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Fashion Style 1"
+                  data-name="Fashion Style 1"
+                  data-price="1600"
+                  data-description="Description for Fashion Style 1"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Fashion Style 2"
+                  data-name="Fashion Style 2"
+                  data-price="1700"
+                  data-description="Description for Fashion Style 2"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Fashion Style 3"
+                  data-name="Fashion Style 3"
+                  data-price="1800"
+                  data-description="Description for Fashion Style 3"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Fashion Style 4"
+                  data-name="Fashion Style 4"
+                  data-price="1900"
+                  data-description="Description for Fashion Style 4"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Fashion Style 5"
+                  data-name="Fashion Style 5"
+                  data-price="2000"
+                  data-description="Description for Fashion Style 5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview Section -->
+          <div class="col-lg-4 preview-section">
+            <h3>Preview</h3>
+            <div id="preview-item" class="text-center">
+              <img
+                id="preview-img"
+                src=""
+                class="img-fluid mb-3"
+                alt="Preview Image"
+              />
+              <h5 id="preview-name"></h5>
+              <div class="d-flex justify-content-center mb-3">
+                <p id="preview-price" class="me-2"></p>
+                <input
+                  type="number"
+                  id="preview-quantity"
+                  class="form-control"
+                  value="1"
+                  min="1"
+                  style="width: 80px"
+                />
+              </div>
+              <p id="preview-description"></p>
+              <div class="d-flex justify-content-around">
+                <button class="btn btn-primary" id="add-to-cart">
+                  Add to Cart
+                </button>
+                <button class="btn btn-success" id="buy-now">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-</body>
+      </div>
+    </section>
+
+    <script src="./js/app.js" defer></script>
+  </body>
 </html>

@@ -70,6 +70,10 @@
 
   /* About.html */
 
+  .about-section {
+    padding-top: 80px;
+  }
+
   .support-section {
     margin-top: 5rem;
   }
@@ -103,6 +107,13 @@
   
   .mission-vision-section p.lead {
     font-size: 1.25rem;
+  }
+
+
+  /* Shop page */
+
+  .shop-section {
+    padding-top: 80px; /* Adjust based on the height of your navbar */
   }
 
   @media (max-width: 768px) {
