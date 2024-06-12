@@ -30,6 +30,9 @@ app.get('/about', (req,res) => {
 app.get('/shop', (req,res) => {
     res.render('shop')
 })
+app.get('/orders', (req,res) => {
+    res.render('orders')
+})
 
 // Connect to MongoDB database
 mongoose.connect('mongodb://localhost:27017/ecommerce', {

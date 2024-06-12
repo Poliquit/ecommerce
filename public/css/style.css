@@ -64,7 +64,8 @@
     color: #6c757d;
   }
 
-  .nav-item.dropdown:hover .dropdown-menu {
+  .nav-item.dropdown:hover .dropdown-menu,
+  .nav-item.dropdown:hover .dropdown-toggle {
     display: block;
   }
 
@@ -98,6 +99,7 @@
   
   .mission-vision-section .img-fluid {
     border-radius: 10px;
+    max-height: 100%;
   }
   
   .mission-vision-section h2 {
@@ -140,6 +142,11 @@
 
 .preview-section .price-quantity .quantity {
   max-width: 70px;
+}
+
+/* Orders */
+.order-section {
+  padding-top: 80px; /* Adjust based on the height of your navbar */
 }
 
 

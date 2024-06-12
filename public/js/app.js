@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         previewImg.src = itemImgSrc;
         previewName.textContent = itemName;
         previewDescription.textContent = itemDescription;
-        previewPrice.textContent = `Price: $${itemPrice}`;
+        previewPrice.textContent = `Price: ${itemPrice}`;
   
         // Show the preview section
         const previewSection = document.querySelector('.preview-section');
