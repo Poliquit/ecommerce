@@ -144,6 +144,8 @@
   max-width: 70px;
 }
 
+
+
 /* Orders */
 .orders-section {
   padding-top: 80px; /* Adjust based on the height of your navbar */
@@ -219,6 +221,14 @@
   background-color: #218838; /* Darker green on hover */
 }
 
+/* order details */
+
+.order-details {
+  margin-top: 80px;
+}
+
+
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .item img {
@@ -229,7 +239,6 @@
     width: 50px;
   }
 }
-
 
 
   @media (max-width: 768px) {
