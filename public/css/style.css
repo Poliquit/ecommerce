@@ -81,7 +81,7 @@
 
   .horizontal-card {
     margin: 15px;
-    width: 100%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -145,9 +145,91 @@
 }
 
 /* Orders */
-.order-section {
+.orders-section {
   padding-top: 80px; /* Adjust based on the height of your navbar */
 }
+.cart-item, .shipping-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.cart-item img, .shipping-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+.cart-item-details, .shipping-item-details {
+  flex: 1;
+}
+.cart-item-actions, .shipping-item-actions {
+  margin-left: 15px;
+}
+
+/*  */
+
+/* Styles for Cart and Shipping Items */
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.item img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.item .item-info {
+  flex: 1;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+.item .price-quantity-remove {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item .price-quantity-remove input {
+  width: 60px; /* Adjust width as needed */
+}
+
+.item .price-quantity-remove .remove-item {
+  margin-left: 10px;
+}
+
+.item p {
+  margin-bottom: 10px;
+}
+
+.item .move-to-shipping {
+  background-color: #28a745; /* Green color for shipping button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.item .move-to-shipping:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .item img {
+    max-width: 80px;
+  }
+  
+  .item .price-quantity-remove input {
+    width: 50px;
+  }
+}
+
 
 
   @media (max-width: 768px) {
