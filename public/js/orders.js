@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="price-quantity-remove">
                         ${item.shipping ? `<p>Quantity: ${item.quantity}</p>` : `
                             <input type="number" class="form-control quantity-input" value="${item.quantity}" min="1" data-id="${item.id}" ${isReviewSection ? 'disabled' : ''}>
-                            ${!isReviewSection ? `<button class="btn btn-danger remove-item" data-id="${item.id}">Remove</button>` : ''}
+                            ${!isReviewSection ? `<button class="btn remove-item" data-id="${item.id}"><i class='bx bxs-trash'></i></button>` : ''}
                         `}
                     </div>
                     ${!isReviewSection && item.shipping ? `<button class="btn btn-success order-receive" data-id="${item.id}">Order Receive</button>` : ''}

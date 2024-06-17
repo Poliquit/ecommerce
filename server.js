@@ -15,7 +15,6 @@ app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
 // For Bootstrap
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-app.use('/bootstrap/dist/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
 
 // Routes
 app.get('/', (req, res) => {
@@ -33,6 +32,11 @@ app.get('/shop', (req,res) => {
 app.get('/orders', (req,res) => {
     res.render('orders')
 })
+app.get('/developers', (req,res) => {
+    res.render('developers')
+})
+
+
 
 // Connect to MongoDB database
 mongoose.connect('mongodb://localhost:27017/ecommerce', {

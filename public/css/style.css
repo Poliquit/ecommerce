@@ -1,3 +1,12 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 /* index.html */
 .profile-pic {
     width: 30px;
@@ -68,6 +77,7 @@
   .nav-item.dropdown:hover .dropdown-toggle {
     display: block;
   }
+
 
   /* About.html */
 
@@ -193,9 +203,13 @@
 .item .price-quantity-remove {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 10px;
 }
+
+.item i {
+  font-size: 24px;
+}
+
 
 .item .price-quantity-remove input {
   width: 60px; /* Adjust width as needed */
@@ -225,6 +239,83 @@
 
 .order-details {
   margin-top: 80px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer p {
+  color: #bbb;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #bbb;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.follow-us .vertical-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-us .vertical-social-icons li {
+  margin-bottom: 10px;
+}
+
+.follow-us .vertical-social-icons li a {
+  color: inherit;
+}
+
+/* Contact Section */
+
+.contact-section {
+  padding-top: 80px;
+}
+
+
+/* Register */
+.register-section {
+  padding-top: 80px;
+}
+
+
+/* Login */
+.login-section {
+  padding-top: 80px;
 }
 
 
