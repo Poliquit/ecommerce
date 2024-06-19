@@ -16,25 +16,24 @@ app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 // For Bootstrap
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 
-// Routes
-app.get('/', (req, res) => {
-    res.render('index');
+app.get('/index', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-app.get('/register', (req, res) => {
-    res.render('register');
+app.get('/index/register', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'register.html'));
 });
-app.get('/about', (req,res) => {
-    res.render('about')
-})
-app.get('/shop', (req,res) => {
-    res.render('shop')
-})
-app.get('/orders', (req,res) => {
-    res.render('orders')
-})
-app.get('/developers', (req,res) => {
-    res.render('developers')
-})
+app.get('/index/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'about.html'));
+});
+app.get('/index/shop', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'shop.html'));
+});
+app.get('/index/orders', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'orders.html'));
+});
+app.get('/index/developers', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'developers.html'));
+});
 
 
 
