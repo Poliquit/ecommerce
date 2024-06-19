@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')))
 app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
 // For Bootstrap
-app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+
 
 // Routes
 app.get('/index', (req, res) => {
