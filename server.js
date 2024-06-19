@@ -11,11 +11,13 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules')))
 app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
 // For Bootstrap
 app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 
+// Routes
 app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
@@ -36,7 +38,6 @@ app.get('/index/developers', (req, res) => {
 });
 
 
-
 // Connect to MongoDB database
 mongoose.connect('mongodb://localhost:27017/ecommerce', {
     useNewUrlParser: true,
@@ -55,7 +56,7 @@ app.post('/register', (req, res) => {
 
     newUser.save()
         .then(user => {
-            res.redirect('/'); // Redirect to login page after registration
+            res.redirect('/index'); // Redirect to login page after registration
         })
         .catch(err => {
             console.error(err);
