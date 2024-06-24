@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/categories')));
 app.use(express.static(path.join(__dirname, 'node_modules')))
 app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
@@ -18,6 +19,9 @@ app.use('/Assets',express.static(path.join(__dirname, 'Assets')));
 
 
 // Routes
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'demo.html'));
+});
 app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
@@ -36,33 +40,19 @@ app.get('/index/orders', (req, res) => {
 app.get('/index/developers', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'developers.html'));
 });
+app.get('/artworks', (req,res) => {
+    res.sendFile('/categories/artworks.html')
+})
+app.get('/fashionstyles', (req,res) => {
+    res.sendFile('/categories/fashionstyles.html')
+})
+app.get('/furnitures', (req,res) => {
+    res.sendFile('/categories/furnitures.html')
+})
+app.get('/home-decoration', (req,res) => {
+    res.sendFile('/categories/homedecor.html')
+})
 
-
-// Connect to MongoDB database
-mongoose.connect('mongodb://localhost:27017/ecommerce', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-// Middleware to parse form data
-app.use(express.urlencoded({ extended: true }));
-
-// POST route for registering a new user
-app.post('/register', (req, res) => {
-    const newUser = new User({
-        username: req.body.username,
-        password: req.body.password,
-    });
-
-    newUser.save()
-        .then(user => {
-            res.redirect('/index'); // Redirect to login page after registration
-        })
-        .catch(err => {
-            console.error(err);
-            res.status(400).send("Error registering user");
-        });
-});
 
 // Start the server
 app.listen(port, () => {

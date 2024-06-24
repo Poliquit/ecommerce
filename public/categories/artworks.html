@@ -24,24 +24,21 @@
       defer
     ></script>
     <!-- Bootstrap CSS -->
-    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>HIYAS</title>
-    <link rel="icon" type="image/png" href="/Assets/icon.png" />
     <script src="app.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/orders.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- NAVIGATION BAR WITH HEADER -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navs fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="Assets/logo.png" alt="">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../Assets/logo.png" alt="">
         </a>
         <button
           class="navbar-toggler"
@@ -60,7 +57,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item dropdown nav-list">
               <a
@@ -74,7 +71,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="../about.html">About</a>
             </li>
           </ul>
           <!-- Hidden content when navbar is collapsed -->
@@ -106,27 +103,27 @@
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-success" href="/orders.html">
+                  <a class="dropdown-item" href="../orders.html">
                     Order <i class="bx bxs-package"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="developers.html">
+                  <a class="dropdown-item" href="../developers.html">
                     Developers <i class="bx bxs-star"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="contact.html">
+                  <a class="dropdown-item" href="../contact.html">
                     Contact <i class="bx bxs-envelope"></i>
                   </a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
-                    class="dropdown-item logout text-danger"
-                    href="demo.html"
+                    class="dropdown-item logout text-success"
+                    href="register.html"
                   >
-                    Logout
+                    Sign up
                   </a>
                 </li>
               </ul>
@@ -136,29 +133,96 @@
       </div>
     </nav>
 
-    <!-- Order Products -->
-
-    <section class="orders-section">
-      <div class="container">
-        <h1 class="text-center">Orders</h1>
+    <!-- Categories -->
+    <section class="shop-section">
+      <div class="container mb-5">
         <div class="row">
-          <!-- Cart Column -->
-          <div class="col-lg-4">
-            <h2 class="text-center">Cart</h2>
-            <div class="cart-items"></div>
+          <!-- Categories Section -->
+          <div class="col-lg-8">
+            <!-- Main Heading -->
+            <!-- Art Works -->
+            <h3 class="mt-4">Art Works</h3>
+            <div class="row mt-3" id="#artworks">
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="../Assets/Art Works Category/1AW_Sunlit.jpeg"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Sunlit"
+                  data-name="Sunlit"
+                  data-price="₱ 2,500.00"
+                  data-description="The watercolor painting Sunlit depicts a lovely city street bathed in warm, natural sunlight. The serene and scenic ambiance of a sunny day is captured in this work of art. Grab the elegance of a painting by Sunlight!"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="../Assets/Art Works Category/2AW_infinite grace.jpeg"
+                  class="img-fluid rounded mb-3 item"
+                  alt="“Infinite Grace” Series"
+                  data-name="“Infinite Grace” Series"
+                  data-price="₱ 6,932.00"
+                  data-description="As a little child looks at the lovely water lilies and a lily pond, you can feel the peace of a quiet koi pond. The abstract pond is expertly combined with the surrounding natural features in the artist's own manner to create a spellbinding work of art."
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="../Assets/Art Works Category/3AW_Nature way.jpeg"
+                  class="img-fluid rounded mb-3 item"
+                  alt="NATURE’S WAY"
+                  data-name="NATURE’S WAY"
+                  data-price="₱ 4,500.00"
+                  data-description="This magnificent piece will allow you to appreciate the serene beauty of nature. An exquisite oil painting of water and rocks created on a stretched canvas. Take a trip to a calm, sophisticated, and artistic environment."
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="../Assets/Art Works Category/4AW_off with her head.jpeg"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Off With Her Head! "
+                  data-name="Off With Her Head! "
+                  data-price="₱ 10,000.00 "
+                  data-description="This sculpture was inspired by the scene in the Alice in Wonderland book where Alice is growing back to her normal size, the card soldiers charge into her, and the Queen yells, Off with her head!"
+                />
+              </div>
+              <div class="col-6 col-md-4 col-lg-2">
+                <img
+                  src="../Assets/Art Works Category/5AW_Red and Blue Plaid Sketchbook.jpeg"
+                  class="img-fluid rounded mb-3 item"
+                  alt="Red & Blue Plaid Sketchbook "
+                  data-name="Red & Blue Plaid Sketchbook "
+                  data-price="₱ 345.00"
+                  data-description="The Red & Blue Plaid Sketchbook is the perfect companion for artistic individuals like yourself. Its beautiful design, featuring a combination of red and blue plaid patterns, adds a touch of visual appeal. With its crisp, blank pages, this sketchbook provides an excellent canvas for your sketches, drawings, and notes. Whether you're an aspiring artist or simply love to express your creativity, this sketchbook is a must-have. So go ahead and let your imagination soar as you fill its pages with your unique designs."
+                />
+              </div>
+            </div>
           </div>
 
-          <!-- Shipping Column -->
-          <div class="col-lg-4">
-            <h2 class="text-center">Shipping</h2>
-            <div class="shipping-items"></div>
-          </div>
-
-          <!-- Reviews Column -->
-          <div class="col-lg-4">
-            <h2 class="text-center">Reviews</h2>
-            <div class="review-items"></div>
-            <button class="btn btn-danger clear-reviews">Clear Reviews</button>
+          <!-- Preview Section -->
+          <div class="col-lg-4 preview-container">
+            <h2>Preview</h2>
+            <div class="preview-section">
+              <img
+                src=""
+                class="img-fluid rounded mb-3 preview-img"
+                alt="Preview Image"
+              />
+              <div class="preview-details">
+                <h3 class="mb-3 preview-name"></h3>
+                <div class="price-quantity mb-3">
+                  <span class="preview-price"></span>
+                  <input
+                    type="number"
+                    class="form-control quantity"
+                    value="1"
+                  />
+                </div>
+                <p class="mb-3 preview-description"></p>
+                <div class="buttons">
+                  <button class="btn btn-primary mb-3" id="add-to-cart">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -222,5 +286,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/shop.js" defer></script>
   </body>
 </html>

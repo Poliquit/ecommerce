@@ -6,7 +6,16 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #F8F6F0;
 }
+
+/* .categories-bg {
+  background-color: #F0ECC9;
+}
+
+.explore-section {
+  background-color: #F0ECC9;
+} */
 /* index.html */
 .profile-pic {
     width: 30px;
@@ -28,10 +37,19 @@ body {
     margin-top: 5px;
   }
 
+  nav {
+    background: #F8F6F0;
+  }
+
   header {
     margin-top: 4rem;
   }
-  
+
+  nav img {
+    width: 130px;
+    height: 70px;
+  }
+
   .carousel-indicators [data-bs-target] {
     background-color: #000;
     border-radius: 50%;
@@ -53,8 +71,8 @@ body {
 
   section .card {
     border: none; 
-    background-color: transparent;
     box-shadow: none; 
+    border-radius: 20px;
   }
   
   .card-img-top {
@@ -124,12 +142,17 @@ body {
 
   /* Shop page */
 
-  .shop-section {
+.shop-section {
   padding-top: 80px; /* Adjust based on the height of your navbar */
 }
 
-.preview-section {
+.preview-section{
   display: none; /* Hide the preview section initially */
+  padding-top: 80px;
+}
+
+.preview-container {
+  padding-top: 100px;
 }
 
 .preview-section img {
@@ -244,8 +267,7 @@ body {
 /* Footer */
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #F19406;
   padding: 40px 0;
   margin-top: auto; /* This pushes the footer to the bottom */
 }
@@ -303,7 +325,16 @@ body {
 /* Contact Section */
 
 .contact-section {
-  padding-top: 80px;
+  padding-top: 100px;
+}
+
+section .shop-section,
+.preview {
+  padding-top: 100px;
+}
+
+nav img:hover {
+  transform: scale(1.2);
 }
 
 

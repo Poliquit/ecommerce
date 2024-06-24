@@ -28,6 +28,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>HIYAS</title>
     <script src="./js/app.js" defer></script>
@@ -36,105 +41,47 @@
 
   <body>
     <!-- NAVIGATION BAR WITH HEADER -->
-    <nav class="navbar navbar-expand-lg shadow-lg navs fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navs fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="Assets/logo.png" alt="">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div
-          class="collapse navbar-collapse justify-content-center nav-list"
+          class="collapse navbar-collapse nav-list"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-success"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown nav-list">
-              <a
-                class="nav-link dropdown-toggle text-black"
-                href="/shop.html"
-                id="navbarDropdown"
-                role="button"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black" href="/about.html">About</a>
-            </li>
-          </ul>
-          <form class="d-flex ms-auto d-lg-flex">
-            <input
-              class="form-control me-2 search-bar"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <div class="btn-group ms-2">
-              <button
-                type="button"
-                class="btn btn-outline-secondary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bx bxs-cog"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <img
-                      src="https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png"
-                      alt="Profile Picture"
-                      class="profile-pic"
-                    />
-                    user
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="orders.html">
-                    Order <i class="bx bxs-package"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="developers.html">
-                    Developers <i class="bx bxs-star"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="contact.html">
-                    Contact <i class="bx bxs-envelope"></i>
-                  </a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a
-                    class="dropdown-item logout text-danger"
-                    href="demo.html"
-                  >
-                    Logout
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </form>
-        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">     
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo-about.html">About</a>
+          </li>
+        </ul>
+      </div>
+        <form class="d-flex ms-auto d-lg-flex">
+          <div class="btn-group ms-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Register
+            </button>
+          </div>
+          <div class="btn-group ms-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+          </div>
+        </form>
       </div>
     </nav>
 
@@ -229,69 +176,58 @@
 
     <!-- Categories -->
     <section class="card-section">
-      <h3 class="text-center mb-5 text-black">Categories</h3>
-      <div class="container-fluid categories-bg py-5">
-        <div class="container ">
+      <h3 class="text-center mb-5">Categories</h3>
+      <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <div class="col ">
-              <div class="card shadow-lg">
-                <a href="categories/artworks.html">
-                  <img
-                    src="Assets/Home-Categories/Artworks.png"
-                    class="card-img-top"
-                    alt="Art Works"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <a href="categories/fashionstyles.html">
-                  <img
-                    src="Assets/Home-Categories/Fashion+Styles.png"
-                    class="card-img-top"
-                    alt="Decorations"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <a href="categories/furnitures.html">
-                  <img
-                    src="Assets/Home-Categories/Furniture.png"
-                    class="card-img-top"
-                    alt="Furnitures"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg">
-                <a href="categories/homedecor.html" id="#homedecor">
-                  <img
-                    src="Assets/Home-Categories/Home Decor.png"
-                    class="card-img-top"
-                    alt="Fashion + Styles"
-                  />
-                </a>
-              </div>
+          <div class="col remove">
+            <div class="card">
+              <img
+                src="Assets/Home-Categories/Artworks.png"
+                class="card-img-top"
+                alt="Art Works"
+              />
             </div>
           </div>
-          
+          <div class="col">
+            <div class="card">
+              <img
+                src="Assets/Home-Categories/Fashion+Styles.png"
+                class="card-img-top"
+                alt="Decorations"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="Assets/Home-Categories/Furniture.png"
+                class="card-img-top"
+                alt="Furnitures"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="Assets/Home-Categories/Home Decor.png"
+                class="card-img-top"
+                alt="Fashion + Styles"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Explore Section -->
     <section class="card-section explore-section">
-      <h3 class="text-center mb-5 text-black explore-section">Explore Best Sellers</h3>
+      <h3 class="text-center mb-5">Explore Best Sellers</h3>
       <div class="container">
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center"
         >
           <div class="col mb-4">
-            <div class="card shadow-lg">
+            <div class="card">
               <img
                 src="Assets/Art Works Category/4AW_off with her head.jpeg"
                 class="card-img-top"
@@ -303,7 +239,7 @@
             </div>
           </div>
           <div class="col mb-4">
-            <div class="card shadow-lg">
+            <div class="card">
               <img
                 src="Assets/Home Decoration Category/HD_lavender mug3.jpeg"
                 class="card-img-top"
@@ -315,7 +251,7 @@
             </div>
           </div>
           <div class="col mb-4">
-            <div class="card shadow-lg">
+            <div class="card">
               <img
                 src="Assets/Furnitures Category/Furni_2Junk not storage table set.jpeg"
                 class="card-img-top"
@@ -329,7 +265,7 @@
         </div>
       </div>
 
-      <p class="text-center mb-5"><a href="shop.html" class="text-black">View all</a></p>
+      <p class="text-center mb-5"><a href="about.html">View all</a></p>
     </section>
 
     <section class="mission-vision-section">
@@ -337,11 +273,11 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="mission">
-              <h3 class="mb-5 text-black">
+              <h3 class="mb-5">
                 Welcome to the place where all Filipino artists reside and share
                 their works.
               </h3>
-              <p class="lead text-black text-black">
+              <p class="lead">
                 What is our goal? in order to preserve and promote Philippine
                 creativity and craftsmanship abroad for a long time to come, we
                 plan to digitize all Filipino creators across the country to our
@@ -349,11 +285,13 @@
                 and supports Filipino talents, not just a marketplace!
               </p>
             </div>
-            <a href="/about.html" class="learn-more btn mt-3">Learn more..</a>
+            <a href="demo-about.html" class="btn btn-secondary mt-3"
+              >Learn more..</a
+            >
           </div>
           <div class="col-md-6">
             <img
-              src="Assets/PH.jpg"
+              src="Assets/Home-Categories/learn-more.png"
               class="img-fluid rounded"
               alt="Mission and Vision Image"
             />
@@ -361,6 +299,149 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="registerModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Register</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-person-fill"></i
+              ></span>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Username.."
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-lock-fill"></i
+              ></span>
+              <input
+                type="password"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Password.."
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-lock-fill"></i
+              ></span>
+              <input
+                type="password"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Confirm Password.."
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-envelope-fill"></i></span>
+              <input
+                type="email"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Email.."
+              />
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <a href="index.html"
+              ><button type="button" class="btn btn-success">
+                Register
+              </button></a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-person-fill"></i
+              ></span>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Username.."
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-lock-fill"></i
+              ></span>
+              <input
+                type="password"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Password.."
+              />
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <a href="index.html"
+              ><button type="button" class="btn btn-success">
+                Login
+              </button></a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
 
